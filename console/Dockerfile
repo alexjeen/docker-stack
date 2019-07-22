@@ -53,7 +53,7 @@ RUN echo 'display_errors=on' >> /usr/local/etc/php/conf.d/docker-php-display-err
 RUN echo 'error_reporting=E_ALL' >> /usr/local/etc/php/conf.d/docker-php-display-errors.ini;
 
 # memory limit
-RUN echo 'memory_limit=3072M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
+RUN echo 'memory_limit=1024M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
 
 # xdebug settings
 RUN echo 'xdebug.idekey=phpstorm' >> /usr/local/etc/php/conf.d/docker-php-xdebug.ini;
