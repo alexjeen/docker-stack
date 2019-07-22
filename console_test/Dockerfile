@@ -51,9 +51,8 @@ RUN apk add --no-cache freetype libpng libjpeg-turbo freetype-dev libpng-dev lib
 RUN echo 'display_errors=on' >> /usr/local/etc/php/conf.d/docker-php-display-errors.ini;
 RUN echo 'error_reporting=E_ALL' >> /usr/local/etc/php/conf.d/docker-php-display-errors.ini;
 
-
 # memory limit
-RUN echo 'memory_limit=3072M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
+RUN echo 'memory_limit=1024M' >> /usr/local/etc/php/conf.d/docker-php-memlimit.ini;
 
 # set pem file location
 RUN echo 'curl.cainfo = /usr/local/share/ca-certificates/cacert.pem' >> /usr/local/etc/php/conf.d/docker-php-cacert.ini;
